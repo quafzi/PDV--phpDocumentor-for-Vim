@@ -77,10 +77,10 @@ let g:pdv_cfg_CommentSingle = "//"
 " Default values
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
-let g:pdv_cfg_Version = "$id$"
-let g:pdv_cfg_Author = "Tobias Schlitt <toby@php.net>"
-let g:pdv_cfg_Copyright = "1997-2005 The PHP Group"
-let g:pdv_cfg_License = "PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}"
+let g:pdv_cfg_Version = "$Id$"
+let g:pdv_cfg_Author = "Mario Behrendt <mario.behrendt@netresearch.de>"
+let g:pdv_cfg_Copyright = "2011"
+let g:pdv_cfg_License = "GPL"
 
 let g:pdv_cfg_ReturnVal = "void"
 
@@ -92,11 +92,11 @@ let g:pdv_cfg_Uses = 1
 let g:pdv_cfg_paste = 1
 
 " Wether for PHP5 code PHP4 tags should be set, like @access,... (1|0)?
-let g:pdv_cfg_php4always = 1
+let g:pdv_cfg_php4always = 0
  
 " Wether to guess scopes after PEAR coding standards:
 " $_foo/_bar() == <private|protected> (1|0)?
-let g:pdv_cfg_php4guess = 1
+let g:pdv_cfg_php4guess = 0
 
 " If you selected 1 for the last value, this scope identifier will be used for
 " the identifiers having an _ in the first place.
