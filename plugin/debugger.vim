@@ -117,7 +117,10 @@ if !has("python")
 endif
 
 
-if filereadable($VIMRUNTIME."/plugin/debugger.py")
+" Look for local debugger file first (required for pathogen usage)
+if filereadable(expand("<sfile>:p:h")."/debugger.py")
+  execute "pyfile " . expand("<sfile>:p:h")."/debugger.py"
+elseif filereadable($VIMRUNTIME."/plugin/debugger.py")
   pyfile $VIMRUNTIME/plugin/debugger.py
 elseif filereadable($HOME."/.vim/plugin/debugger.py")
   pyfile $HOME/.vim/plugin/debugger.py
@@ -125,6 +128,7 @@ elseif filereadable($VIM."/vimfiles/plugin/debugger.py")
   pyfile $VIM/vimfiles/plugin/debugger.py
 else
   call confirm('debugger.vim: Unable to find debugger.py. Place it in either your home vim directory or in the Vim runtime directory.', 'OK')
+  finish
 endif
 
 
