@@ -77,9 +77,8 @@ let g:pdv_cfg_CommentSingle = "//"
 " Default values
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
-let g:pdv_cfg_Version = "$Id$"
-let g:pdv_cfg_Author = "Mario Behrendt <mario.behrendt@netresearch.de>"
-let g:pdv_cfg_Copyright = "2011"
+let g:pdv_cfg_Author = "Thomas Birke <tbirke@netextreme.de>"
+let g:pdv_cfg_Copyright = "2013"
 let g:pdv_cfg_License = "GPL"
 
 let g:pdv_cfg_ReturnVal = "void"
